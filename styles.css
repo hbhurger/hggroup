@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'ZalandoSansExpanded-Light';
+  src: url('/public/fonts/ZalandoSansExpanded-Light.ttf') format('ttf'),
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* Basic header layout */
         header {
             display: flex;
@@ -17,6 +25,6 @@
 
         nav a:hover {
             color: #4CAF50; /* Changes color when hovered */
-        }
-    </style>
-    </style>
+        } 
+
+
