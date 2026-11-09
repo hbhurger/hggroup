@@ -1,1 +1,22 @@
+/* Basic header layout */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #333;
+            color: white;
+        }
 
+        /* Styling the navigation links */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #4CAF50; /* Changes color when hovered */
+        }
+    </style>
+    </style>
