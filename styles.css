@@ -1,11 +1,12 @@
 @font-face {
   font-family: 'ZalandoSansExpanded-Light';
-  src: url('/public/fonts/ZalandoSansExpanded-Light.ttf') format('truetype'); /* 1. Fixed format and semicolon */
-  font-weight: normal;
+  src: url('/public/fonts/ZalandoSansExpanded-Light.ttf') format('truetype');
+  font-weight: 300; /* 'Light' fonts typically map better to 300 */
   font-style: normal;
 }
 
-p {
+/* Base typography elements */
+body, p, header {
   font-family: 'ZalandoSansExpanded-Light', sans-serif;
 }
 
@@ -16,17 +17,18 @@ header {
   align-items: center;
   padding: 20px 10%;
   background-color: #333;
-  color: white;
-  font-family: 'ZalandoSansExpanded-Light', sans-serif;
+  color: #fff;
 }
 
 /* Styling the navigation links */
 nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   margin-left: 20px;
+  transition: color 0.3s ease; /* Smooths out the hover color transition */
 }
 
+/* Hover state */
 nav a:hover {
-  color: #4CAF50; /* Changes color when hovered */
+  color: #4CAF50;
 }
