@@ -108,3 +108,56 @@ main p {
     font-size: 14px;
   }
 }
+
+/* Announcement Bar Styling */
+.announcement-bar {
+  background-color: #ff6b6b; /* Accent highlight color */
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+}
+
+.announcement-bar a {
+  color: #ffffff;
+  text-decoration: underline;
+  margin-left: 6px;
+  font-weight: bold;
+}
+
+.announcement-bar a:hover {
+  color: #f8f9fa;
+}
+
+/* Close button on the right edge */
+.announcement-close {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.announcement-close:hover {
+  opacity: 1;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+  .announcement-bar {
+    font-size: 12px;
+    padding: 8px 35px 8px 15px; /* Extra right padding so text doesn't overlap 'X' button */
+  }
+}
