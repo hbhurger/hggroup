@@ -28,6 +28,13 @@ nav a {
   transition: color 0.3s ease; /* Smooths out the hover color transition */
 }
 
+logo a {
+  colour: white;
+  text-size: 40;
+  text-decoration: none;
+  
+}
+
 a {
   text-decoration: none;
 }
