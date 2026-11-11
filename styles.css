@@ -5,12 +5,15 @@
   font-style: normal;
 }
 
-/* Base typography elements */
+/* Base resets & box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body, p, header, h1, h2, h3, h4 {
   font-family: 'ZalandoSansExpanded-Light', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -21,27 +24,35 @@ body {
 /* Header layout */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Pushes Logo to Left & Nav to Right */
   align-items: center;
-  padding: 20px 10%; /* Fixed from 40px 100% */
+  padding: 18px 5%; /* Responsive padding based on viewport width */
   background-color: #0390fc;
   color: #fff;
+  width: 100%;
 }
 
 .logo a {
   color: #ffffff;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   text-decoration: none;
+  white-space: nowrap;
 }
 
-/* Navigation links */
+/* Navigation links container */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Modern spacing between links */
+}
+
 nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
   font-size: 16px;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 nav a:hover {
@@ -73,4 +84,27 @@ main h1 {
 main p {
   font-size: 18px;
   color: #666;
+}
+
+/* Responsive Styles for Mobile Screens (Width <= 600px) */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column; /* Stacks logo on top, menu below on small screens */
+    gap: 15px;
+    padding: 20px 15px;
+  }
+
+  nav {
+    flex-wrap: wrap; /* Allows menu items to wrap neatly on tiny screens */
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  .logo a {
+    font-size: 24px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
 }
