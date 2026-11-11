@@ -1,45 +1,76 @@
 @font-face {
   font-family: 'ZalandoSansExpanded-Light';
   src: url('public/fonts/ZalandoSansExpanded-Light.ttf') format('truetype');
-  font-weight: 300; /* 'Light' fonts typically map better to 300 */
+  font-weight: 300;
   font-style: normal;
 }
 
 /* Base typography elements */
 body, p, header, h1, h2, h3, h4 {
   font-family: 'ZalandoSansExpanded-Light', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Basic header layout */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header layout */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 100%;
+  padding: 20px 50px; /* Fixed from 40px 100% */
   background-color: #0390fc;
   color: #fff;
 }
 
-/* Styling the navigation links */
+.logo a {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navigation links */
 nav a {
   color: #fff;
   text-decoration: none;
   margin-left: 20px;
-  transition: color 0.3s ease; /* Smooths out the hover color transition */
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
-/* Hover state - Updated to change color on hover since original was white on white */
 nav a:hover {
-  color: #ff6b6b; 
+  color: #ff6b6b;
 }
 
-/* Fixed invalid properties and selector */
-.logo a {
-  color: white;
-  font-size: 40px;
-  text-decoration: none;
+/* Main content styling */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-a {
-  text-decoration: none;
+main img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+main h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+main p {
+  font-size: 18px;
+  color: #666;
 }
