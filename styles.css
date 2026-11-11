@@ -6,7 +6,7 @@
 }
 
 /* Base typography elements */
-body, p, header {
+body, p, header, h1, h2, h3, h4 {
   font-family: 'ZalandoSansExpanded-Light', sans-serif;
 }
 
@@ -28,7 +28,11 @@ nav a {
   transition: color 0.3s ease; /* Smooths out the hover color transition */
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Hover state */
 nav a:hover {
-  color: #4CAF50;
+  color: white;
 }
