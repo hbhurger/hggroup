@@ -28,18 +28,18 @@ nav a {
   transition: color 0.3s ease; /* Smooths out the hover color transition */
 }
 
-logo a {
-  colour: white;
-  text-size: 40;
+/* Hover state - Updated to change color on hover since original was white on white */
+nav a:hover {
+  color: #ff6b6b; 
+}
+
+/* Fixed invalid properties and selector */
+.logo a {
+  color: white;
+  font-size: 40px;
   text-decoration: none;
-  
 }
 
 a {
   text-decoration: none;
-}
-
-/* Hover state */
-nav a:hover {
-  color: white;
 }
